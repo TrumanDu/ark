@@ -1,14 +1,13 @@
 import React from 'react';
 import { FileTextTwoTone, WechatFilled, GithubFilled } from '@ant-design/icons';
-import Logo from './logo.png'
+import Logo from './logo.png';
 
 export const Nav30DataSource = {
   wrapper: { className: 'header3 home-page-wrapper' },
   page: { className: 'home-page' },
   logo: {
     className: 'header3-logo',
-    children:
-      Logo,
+    children: Logo,
   },
   Menu: {
     className: 'header3-menu',
@@ -31,7 +30,7 @@ export const Nav30DataSource = {
             },
           ],
           className: 'kmaehwwqsdo-editor_css',
-        }
+        },
       },
       {
         name: 'item1',
@@ -129,7 +128,7 @@ export const Feature70DataSource = {
         md: 6,
         xs: 24,
         name: 'block0',
-        href: "http://blog.trumandu.top",
+        href: 'http://blog.trumandu.top',
         className: 'feature7-block',
         children: {
           className: 'feature7-block-group',
@@ -137,8 +136,9 @@ export const Feature70DataSource = {
             {
               name: 'image',
               className: 'feature7-block-image',
-              children:
-                <FileTextTwoTone style={{ fontSize: '20px', color: '#08c' }} />,
+              children: (
+                <FileTextTwoTone style={{ fontSize: '20px', color: '#08c' }} />
+              ),
             },
             {
               name: 'title',
@@ -159,15 +159,16 @@ export const Feature70DataSource = {
         xs: 24,
         name: 'block1',
         className: 'feature7-block',
-        href: "https://mp.weixin.qq.com/s/3PYnNEf6fZ1mynQ-dYQVKw",
+        href: 'https://mp.weixin.qq.com/s/3PYnNEf6fZ1mynQ-dYQVKw',
         children: {
           className: 'feature7-block-group',
           children: [
             {
               name: 'image',
               className: 'feature7-block-image',
-              children:
-                <WechatFilled style={{ fontSize: '20px', color: 'green' }} />,
+              children: (
+                <WechatFilled style={{ fontSize: '20px', color: 'green' }} />
+              ),
             },
             {
               name: 'title',
@@ -185,17 +186,49 @@ export const Feature70DataSource = {
       {
         md: 6,
         xs: 24,
-        name: 'block2',
+        name: 'block4',
         className: 'feature7-block',
-        href: "https://app.gitbook.com/@trumandu/s/kibana-plugin-development-tutorial/",
+        href: 'http://book.trumandu.top/',
         children: {
           className: 'feature7-block-group',
           children: [
             {
               name: 'image',
               className: 'feature7-block-image',
+              children: (
+                <FileTextTwoTone style={{ fontSize: '20px', color: '#08c' }} />
+              ),
+            },
+            {
+              name: 'title',
+              className: 'feature7-block-title',
+              children: "TrumanDu's Book",
+            },
+            {
+              name: 'content',
+              className: 'feature7-block-content',
               children:
-                <FileTextTwoTone style={{ fontSize: '20px', color: '#08c' }} />,
+                '我的开源书籍网站，包含多个技术教程，不忘初心，为人民服务',
+            },
+          ],
+        },
+      },
+      {
+        md: 6,
+        xs: 24,
+        name: 'block2',
+        className: 'feature7-block',
+        href:
+          'https://app.gitbook.com/@trumandu/s/kibana-plugin-development-tutorial/',
+        children: {
+          className: 'feature7-block-group',
+          children: [
+            {
+              name: 'image',
+              className: 'feature7-block-image',
+              children: (
+                <FileTextTwoTone style={{ fontSize: '20px', color: '#08c' }} />
+              ),
             },
             {
               name: 'title',
@@ -215,15 +248,16 @@ export const Feature70DataSource = {
         xs: 24,
         name: 'block3',
         className: 'feature7-block',
-        href: "https://app.gitbook.com/@trumandu/s/java-architect-tutorial/",
+        href: 'https://app.gitbook.com/@trumandu/s/java-architect-tutorial/',
         children: {
           className: 'feature7-block-group',
           children: [
             {
               name: 'image',
               className: 'feature7-block-image',
-              children:
-                <FileTextTwoTone style={{ fontSize: '20px', color: '#08c' }} />,
+              children: (
+                <FileTextTwoTone style={{ fontSize: '20px', color: '#08c' }} />
+              ),
             },
             {
               name: 'title',
@@ -233,7 +267,8 @@ export const Feature70DataSource = {
             {
               name: 'content',
               className: 'feature7-block-content',
-              children: '该系列只是对自己在java架构方面的现阶段理解的整理系列。',
+              children:
+                '该系列只是对自己在java架构方面的现阶段理解的整理系列。',
             },
           ],
         },
@@ -283,8 +318,7 @@ export const Feature71DataSource = {
             {
               name: 'image',
               className: 'feature7-block-image',
-              children:
-                <GithubFilled style={{ fontSize: '20px' }} />,
+              children: <GithubFilled style={{ fontSize: '20px' }} />,
             },
             {
               name: 'title',
@@ -294,7 +328,8 @@ export const Feature71DataSource = {
             {
               name: 'content',
               className: 'feature7-block-content',
-              children: 'Kafka集群管理和维护，生产/消费监控，生态组件使用的一站式平台',
+              children:
+                'Kafka集群管理和维护，生产/消费监控，生态组件使用的一站式平台',
             },
           ],
         },
@@ -310,8 +345,7 @@ export const Feature71DataSource = {
             {
               name: 'image',
               className: 'feature7-block-image',
-              children:
-                <GithubFilled style={{ fontSize: '20px' }} />,
+              children: <GithubFilled style={{ fontSize: '20px' }} />,
             },
             {
               name: 'title',
@@ -321,7 +355,8 @@ export const Feature71DataSource = {
             {
               name: 'content',
               className: 'feature7-block-content',
-              children: 'Redis一站式管理平台，支持集群的监控、安装、管理、告警等功能',
+              children:
+                'Redis一站式管理平台，支持集群的监控、安装、管理、告警等功能',
             },
           ],
         },
@@ -337,8 +372,7 @@ export const Feature71DataSource = {
             {
               name: 'image',
               className: 'feature7-block-image',
-              children:
-                <GithubFilled style={{ fontSize: '20px' }} />,
+              children: <GithubFilled style={{ fontSize: '20px' }} />,
             },
             {
               name: 'title',
@@ -364,8 +398,7 @@ export const Feature71DataSource = {
             {
               name: 'image',
               className: 'feature7-block-image',
-              children:
-                <GithubFilled style={{ fontSize: '20px' }} />,
+              children: <GithubFilled style={{ fontSize: '20px' }} />,
             },
             {
               name: 'title',
@@ -391,8 +424,7 @@ export const Feature71DataSource = {
             {
               name: 'image',
               className: 'feature7-block-image',
-              children:
-                <GithubFilled style={{ fontSize: '20px' }} />,
+              children: <GithubFilled style={{ fontSize: '20px' }} />,
             },
             {
               name: 'title',
@@ -564,8 +596,13 @@ export const Footer00DataSource = {
     children: (
       <span>
         <span>
-          <a href="https://beian.miit.gov.cn/" target="_blank">陕ICP备15011078号-2</a>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span>
-            ©2021 <a href="http://trumandu.top">trumandu </a>All Rights Reserved<br />
+          <a href="https://beian.miit.gov.cn/" target="_blank">
+            陕ICP备15011078号-2
+          </a>
+          &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+          <span>
+            ©2021 <a href="http://trumandu.top">trumandu </a>All Rights Reserved
+            <br />
           </span>
         </span>
       </span>
