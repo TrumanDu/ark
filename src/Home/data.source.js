@@ -277,8 +277,8 @@ export const Feature70DataSource = {
   },
 };
 export const Feature71DataSource = {
-  wrapper: { className: 'home-page-wrapper feature7-wrapper' },
-  page: { className: 'home-page feature7' },
+  wrapper: { className: 'home-page-wrapper feature71-wrapper' },
+  page: { className: 'home-page feature71' },
   OverPack: { playScale: 0.3 },
   titleWrapper: {
     className: 'feature7-title-wrapper',
@@ -454,7 +454,7 @@ export const Content30DataSource = {
         children: (
           <span>
             <span>
-              <p>产品与服务</p>
+              <p>Side Project</p>
             </span>
           </span>
         ),
@@ -468,6 +468,7 @@ export const Content30DataSource = {
       {
         name: 'block0',
         className: 'content3-block kmaesgc69dm-editor_css',
+        href: 'https://github.com/TrumanDu/TDA',
         md: 8,
         xs: 24,
         children: {
@@ -477,111 +478,10 @@ export const Content30DataSource = {
               'https://zos.alipayobjects.com/rmsportal/ScHBSdwpTkAHZkJ.png',
           },
           textWrapper: { className: 'content3-text kmaeutilrt-editor_css' },
-          title: { className: 'content3-title', children: '企业资源管理' },
+          title: { className: 'content3-title', children: 'TDA' },
           content: {
             className: 'content3-content',
-            children:
-              '云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。',
-          },
-        },
-      },
-      {
-        name: 'block1',
-        className: 'content3-block kmaesqbfix-editor_css',
-        md: 8,
-        xs: 24,
-        children: {
-          icon: {
-            className: 'content3-icon',
-            children:
-              'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png',
-          },
-          textWrapper: { className: 'content3-text kmaev070d2t-editor_css' },
-          title: { className: 'content3-title', children: '云安全' },
-          content: {
-            className: 'content3-content',
-            children:
-              '按金融企业安全要求打造的完整云上安全体系，全方位保障金融应用及数据安全。',
-          },
-        },
-      },
-      {
-        name: 'block2',
-        className: 'content3-block kmaesszofbi-editor_css',
-        md: 8,
-        xs: 24,
-        children: {
-          icon: {
-            className: 'content3-icon',
-            children:
-              'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png',
-          },
-          textWrapper: { className: 'content3-text kmaeva3wst-editor_css' },
-          title: { className: 'content3-title', children: '云监控' },
-          content: {
-            className: 'content3-content',
-            children:
-              '分布式云环境集中监控，统一资源及应用状态视图，智能分析及故障定位。',
-          },
-        },
-      },
-      {
-        name: 'block3',
-        className: 'content3-block kmaesx70td-editor_css',
-        md: 8,
-        xs: 24,
-        children: {
-          icon: {
-            className: 'content3-icon',
-            children:
-              'https://zos.alipayobjects.com/rmsportal/MNdlBNhmDBLuzqp.png',
-          },
-          textWrapper: { className: 'content3-text kmaetw3w4ja-editor_css' },
-          title: { className: 'content3-title', children: '移动' },
-          content: {
-            className: 'content3-content',
-            children:
-              '一站式移动金融APP开发及全面监控；丰富可用组件，动态发布和故障热修复。',
-          },
-        },
-      },
-      {
-        name: 'block4',
-        className: 'content3-block',
-        md: 8,
-        xs: 24,
-        children: {
-          icon: {
-            className: 'content3-icon',
-            children:
-              'https://zos.alipayobjects.com/rmsportal/UsUmoBRyLvkIQeO.png',
-          },
-          textWrapper: { className: 'content3-text kmaetp3rh7u-editor_css' },
-          title: { className: 'content3-title', children: '分布式中间件' },
-          content: {
-            className: 'content3-content',
-            children:
-              '金融级联机交易处理中间件，大规模分布式计算机，数万笔/秒级并发能力，严格保证交易数据统一性。',
-          },
-        },
-      },
-      {
-        name: 'block5',
-        className: 'content3-block',
-        md: 8,
-        xs: 24,
-        children: {
-          icon: {
-            className: 'content3-icon',
-            children:
-              'https://zos.alipayobjects.com/rmsportal/ipwaQLBLflRfUrg.png',
-          },
-          textWrapper: { className: 'content3-text kmaetfp0ocg-editor_css' },
-          title: { className: 'content3-title', children: '大数据' },
-          content: {
-            className: 'content3-content',
-            children:
-              '一站式、全周期大数据协同工作平台，PB级数据处理、毫秒级数据分析工具。',
+            children: 'Truman Du Assistant  简称 TDA ,个人助手。',
           },
         },
       },
@@ -597,11 +497,12 @@ export const Footer00DataSource = {
       <span>
         <span>
           <a href="https://beian.miit.gov.cn/" target="_blank">
-            陕ICP备15011078号-2
+            陕ICP备 15011078 号-2
           </a>
           &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
           <span>
-            ©2021 <a href="http://trumandu.top">trumandu </a>All Rights Reserved
+            ©2021 <a href="http://www.trumandu.top">trumandu </a>All Rights
+            Reserved
             <br />
           </span>
         </span>
