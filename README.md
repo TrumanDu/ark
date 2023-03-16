@@ -1,15 +1,9 @@
-# umi project
+# TrumanDu 个人网站
 
-## Getting Started
+## 使用
 
-Install dependencies,
+安装依赖使用`pnpm`
 
-```bash
-$ yarn
-```
+运行`pnpm dev`
 
-Start the dev server,
-
-```bash
-$ yarn start
-```
+打包`pnpm build`
