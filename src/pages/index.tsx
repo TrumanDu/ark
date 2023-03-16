@@ -8,8 +8,8 @@ import kibana from "../assets/kibana20230315232024.png";
 export default function HomePage() {
   return (
     <div className="flex flex-col items-center">
-      <div className="mx-auto z-0 flex flex-wrap pb-8 w-4/5 mb-4 sm:w-1/1">
-        <div className="mt-28 sm:w-1/1 md:w-1/2">
+      <div className="mx-auto z-0 flex flex-wrap pb-8 mb-4 sm:w-1/1">
+        <div className="mt-28 p-8 sm:w-1/1 md:w-3/5">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Software designer, speaker, and author.
           </h1>
@@ -20,7 +20,7 @@ export default function HomePage() {
             I’m the founder of Xi 'an IT Technology Organization, where we can
             share technology and experience.
           </p>
-          <div className="mt-20 flex gap-6">
+          <div className="mt-20 flex  gap-6">
             <a
               className="group -m-1 p-1"
               aria-label="Follow on GitHub"
@@ -140,7 +140,7 @@ export default function HomePage() {
             </a>
           </div>
         </div>
-        <div className="mt-28 sm:w-1/1 md:w-1/2">
+        <div className="mt-28 sm:w-1/1 md:max-w-sm">
           <img src={wechat} className="md:max-w-sm" />
         </div>
       </div>
@@ -150,8 +150,8 @@ export default function HomePage() {
             Books
           </h1>
         </div>
-        <div className="flex mt-8 flex-col md:flex-row flex-wrap gap-4">
-          <div className="md:w-1/3 lg:w-1/4 min-w-min mb-4 rounded overflow-hidden shadow-md  flex hover:shadow-xl transform transition duration-500 hover:scale-105">
+        <div className="flex mt-8 flex-col md:flex-row flex-wrap gap-8">
+          <div className="max-w-xl mb-4 rounded overflow-hidden shadow-md  flex hover:shadow-xl transform transition duration-500 hover:scale-105">
             <a
               className=" flex"
               target="_blank"
@@ -171,7 +171,7 @@ export default function HomePage() {
             </a>
           </div>
 
-          <div className="md:w-1/3 lg:w-1/4 min-w-min mb-4 rounded overflow-hidden shadow-md flex hover:shadow-xl transform transition duration-500 hover:scale-105">
+          <div className="max-w-xl mb-4 rounded overflow-hidden shadow-md flex hover:shadow-xl transform transition duration-500 hover:scale-105">
             <a
               className=" flex"
               target="_blank"
@@ -190,7 +190,7 @@ export default function HomePage() {
               </div>
             </a>
           </div>
-          <div className="md:w-1/3 lg:w-1/4 min-w-min mb-4 rounded overflow-hidden shadow-md flex hover:shadow-xl transform transition duration-500 hover:scale-105">
+          <div className="max-w-xl mb-4 rounded overflow-hidden shadow-md flex hover:shadow-xl transform transition duration-500 hover:scale-105">
             <a
               className=" flex"
               target="_blank"
@@ -205,7 +205,7 @@ export default function HomePage() {
               </div>
             </a>
           </div>
-          <div className="md:w-1/3 lg:w-1/4 min-w-min mb-4 rounded overflow-hidden shadow-md flex hover:shadow-xl transform transition duration-500 hover:scale-105">
+          <div className="max-w-xl mb-4 rounded overflow-hidden shadow-md flex hover:shadow-xl transform transition duration-500 hover:scale-105">
             <a
               className=" flex"
               target="_blank"
@@ -224,7 +224,7 @@ export default function HomePage() {
               </div>
             </a>
           </div>
-          <div className="md:w-1/3 lg:w-1/4 min-w-min mb-4 rounded overflow-hidden shadow-md flex hover:shadow-xl transform transition duration-500 hover:scale-105">
+          <div className="max-w-xl mb-4 rounded overflow-hidden shadow-md flex hover:shadow-xl transform transition duration-500 hover:scale-105">
             <a
               className=" flex"
               target="_blank"
