@@ -1,6 +1,6 @@
 {
   "private": true,
-  "author": "trumandu <1753177225@qq.com>",
+  "author": "trumandu",
   "scripts": {
     "dev": "umi dev",
     "build": "umi build",
