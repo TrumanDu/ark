@@ -145,12 +145,18 @@ export default function HomePage() {
         </div>
       </div>
       <div className="mx-auto z-0 flex flex-wrap pb-16 w-4/5 mb-4 sm:w-1/1">
-        <div className="w-full">
+        <div className="w-full text-center">
           <h1 className="text-4xl tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Books
           </h1>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+            一些写过的开源书籍
+          </p>
         </div>
-        <div className="flex mt-8 flex-col md:flex-row flex-wrap gap-8">
+        <div
+          style={{ marginTop: "50px" }}
+          className="m-auto grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+        >
           <div className="max-w-xl mb-4 rounded overflow-hidden shadow-md  flex hover:shadow-xl transform transition duration-500 hover:scale-105">
             <a
               className=" flex"
