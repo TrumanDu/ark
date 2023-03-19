@@ -7,7 +7,7 @@ export default function Footer() {
       <span>
         <a
           href="https://beian.miit.gov.cn"
-          className="text-blue-600 hover:underline"
+          className="text-yellow-600 hover:underline"
         >
           陕ICP备 15011078 号-2
         </a>
