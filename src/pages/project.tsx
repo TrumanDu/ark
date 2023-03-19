@@ -354,7 +354,7 @@ const Project = () => {
                 autocomplate-shell
               </div>
               <p className="text-zinc-100 text-base">
-                下载量超23k的vs code插件，支持shell代码补全
+                下载量超51k的vs code插件，支持shell代码补全
               </p>
             </div>
           </a>
