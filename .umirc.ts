@@ -7,6 +7,7 @@ export default defineConfig({
     { path: "/project", component: "project" },
   ],
   hash: true,
+  exportStatic: {},
   npmClient: "pnpm",
   tailwindcss: {},
   plugins: ["@umijs/plugins/dist/tailwindcss"],
