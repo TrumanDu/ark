@@ -15,7 +15,7 @@ const About = () => {
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             I’m Truman Du.
           </h1>
-          <div className="mt-6 prose prose-slate mx-auto lg:prose-lg ">
+          <div style={{marginBottom: '50px' }} className="mt-6 prose prose-slate mx-auto lg:prose-lg ">
             <p>
               一名来自Newegg的架构师，熟悉常用的前后端技术，目前专注于
               <strong>大数据，基础软件架构</strong>等领域。 同时还是
