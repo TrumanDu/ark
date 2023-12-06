@@ -234,7 +234,7 @@ export default function HomePage() {
             <a
               className=" flex"
               target="_blank"
-              href="https://app.gitbook.com/@trumandu/s/java-architect-tutorial/"
+              href="https://trumandu.gitbook.io/kibana-plugin-development-tutorial/"
             >
               <div className="w-1/3">
                 <img src={kibana} alt="Book Cover" className="w-full" />
