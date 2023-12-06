@@ -1,3 +1,4 @@
+import toolkit from "../assets/toolkit.png";
 const Project = () => {
   return (
     <div className="mx-auto mt-20 mb:w-4/5">
@@ -367,6 +368,24 @@ const Project = () => {
         <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
           生活很苦，做点自己喜欢的产品
         </p>
+      </div>
+      <div
+        style={{ marginTop: "50px" }}
+        className="m-auto w-4/5 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+      >
+        <div className="h-40 p-6 rounded overflow-hidden shadow-md  flex hover:shadow-xl transform transition duration-500 hover:scale-105 bg-gradient-to-r from-red-500 to-orange-500">
+          <a href="https://toolkit.trumandu.top/" className="flex">
+            <img src={toolkit} height={60} width={110} />
+            <div className="px-6 py-4">
+              <div className="font-bold text-zinc-100 text-xl mb-2">
+                Toolkit
+              </div>
+              <p className="text-zinc-100 text-base">
+                一个专为程序员设计的极简、插件化的工具集！
+              </p>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   );
