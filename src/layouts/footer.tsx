@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer
       style={{ backgroundColor: "#001529" }}
-      className="absolute bottom-0 mt-4 p-4 z-20 w-full flex  justify-center  text-white space-x-20 md:items-center"
+      className="absolute mt-4 p-4 z-20 w-full flex  justify-center  text-white space-x-20 md:items-center"
     >
       <span>
         <a
