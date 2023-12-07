@@ -370,7 +370,7 @@ const Project = () => {
         </p>
       </div>
       <div
-        style={{ marginTop: "50px" }}
+        style={{ marginTop: "50px",marginBottom: "100px" }}
         className="m-auto w-4/5 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
       >
         <div className="h-40 p-6 rounded overflow-hidden shadow-md  flex hover:shadow-xl transform transition duration-500 hover:scale-105 bg-gradient-to-r from-red-500 to-orange-500">
