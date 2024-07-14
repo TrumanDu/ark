@@ -4,6 +4,7 @@ import book2 from "../assets/java20230315231340.png";
 import book3 from "../assets/mongo20230315231615.png";
 import book4 from "../assets/es20230315231815.png";
 import kibana from "../assets/kibana20230315232024.png";
+import language from "../assets/language.png";
 
 export default function HomePage() {
   return (
@@ -24,6 +25,7 @@ export default function HomePage() {
             <a
               className="group -m-1 p-1"
               aria-label="Follow on GitHub"
+              title="GitHub"
               href="https://github.com/TrumanDu"
             >
               <svg
@@ -86,7 +88,8 @@ export default function HomePage() {
             <a
               className="group -m-1 p-1"
               aria-label="Subscribe"
-              href="https://trumandu.zhubai.love/"
+              title="Contact"
+              href="mailto:truman.p.du@qq.com"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -118,8 +121,9 @@ export default function HomePage() {
             </a>
             <a
               className="group -m-1 p-1"
+              title="微信公众号"
               aria-label="wechat"
-              href="https://mp.weixin.qq.com/s?__biz=MzI4NTMwNTQ5Mg==&mid=2247483684&idx=1&sn=4c1f96c16463601a7e220a06649f4cd3"
+              href="http://static.trumandu.top/trumandu_wechat_2022.png"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -135,6 +139,96 @@ export default function HomePage() {
                 <path
                   fill="currentColor"
                   d="M22.26 14.57c0-2.84-2.87-5.14-6.41-5.14s-6.41 2.3-6.41 5.14s2.87 5.14 6.41 5.14c.58 0 1.14-.08 1.67-.2L20.98 21l-1.2-2.4c1.5-.94 2.48-2.38 2.48-4.03zm-8.34-.32a.96.96 0 1 1 .96-.96c.01.53-.43.96-.96.96zm3.85 0a.96.96 0 1 1 0-1.92a.96.96 0 0 1 0 1.92z"
+                />
+              </svg>
+            </a>
+            <a
+              className="group -m-1 p-1"
+              aria-label="book"
+              title="Book"
+              href="https://book.trumandu.top/"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 100 100"
+              >
+                <path
+                  fill="#C0392B"
+                  fill-rule="evenodd"
+                  d="M6 100h88a6 6 0 0 0 6-6V6a6 6 0 0 0-6-6H6a6 6 0 0 0-6 6v88a6 6 0 0 0 6 6z"
+                  clip-rule="evenodd"
+                />
+                <path
+                  fill="#E74C3C"
+                  fill-rule="evenodd"
+                  d="M100 30h-.025a5.5 5.5 0 0 0-5.475-5H6.25C2.937 25 0 22.314 0 19V6a6 6 0 0 1 6-6h88c3.313 0 6 2.687 6 6.001V30z"
+                  clip-rule="evenodd"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M5 100h2V0H5v100z"
+                  clip-rule="evenodd"
+                  opacity=".15"
+                />
+                <path
+                  fill="#fff"
+                  fill-rule="evenodd"
+                  d="M7 100h2V0H7v100z"
+                  clip-rule="evenodd"
+                  opacity=".15"
+                />
+                <path
+                  fill="#fff"
+                  fill-rule="evenodd"
+                  d="M100 10.001a5 5 0 0 0-5-5H7a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h87a6 6 0 0 1 6 6v-15h-.101c.066-.323.101-.658.101-1z"
+                  clip-rule="evenodd"
+                />
+                <path
+                  fill="#95A5A6"
+                  fill-rule="evenodd"
+                  d="M100 15.423v-3.921s.183-4-5-4H5v2h89a5.995 5.995 0 0 1 5.98 5.616c-.107-1-.789-3.615-4.98-3.615H5v2h89a5.995 5.995 0 0 1 5.98 5.616c-.107-1.001-.789-3.616-4.98-3.616H5v2h89a6 6 0 0 1 6 6v-8.08z"
+                  clip-rule="evenodd"
+                  opacity=".2"
+                />
+                <path
+                  fill="#2980B9"
+                  fill-rule="evenodd"
+                  d="M80 100h10V25H80v75z"
+                  clip-rule="evenodd"
+                />
+                <path
+                  fill="#3498DB"
+                  fill-rule="evenodd"
+                  d="M80 25.007h10V0H80v25.007z"
+                  clip-rule="evenodd"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M82 100h2V0h-2v100zM86 0v100h2V0h-2z"
+                  clip-rule="evenodd"
+                  opacity=".1"
+                />
+              </svg>
+            </a>
+            <a
+              className="group -m-1 p-1"
+              title="Blog"
+              aria-label="blog"
+              href="https://blog.trumandu.top/"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  d="M5 16a3 3 0 1 0 0 6a3 3 0 0 0 0-6ZM5 1c9.925 0 18 8.075 18 18m-5 0c0-7.168-5.832-13-13-13m8 13c0-4.411-3.589-8-8-8m-3 0v8"
                 />
               </svg>
             </a>
@@ -243,6 +337,25 @@ export default function HomePage() {
                 <div className="font-bold text-xl mb-2">Kibana插件开发指南</div>
                 <p className="text-gray-700 text-base">
                   这是一本讲述kibana插件开发教程类的书籍，只针对5.x-6.x
+                </p>
+              </div>
+            </a>
+          </div>
+          <div className="max-w-xl mb-4 rounded overflow-hidden shadow-md flex hover:shadow-xl transform transition duration-500 hover:scale-105">
+            <a
+              className=" flex"
+              target="_blank"
+              href="https://trumandu.gitbook.io/kibana-plugin-development-tutorial/"
+            >
+              <div className="w-1/3">
+                <img src={language} alt="Book Cover" className="w-full" />
+              </div>
+              <div className="w-2/3 px-6 py-4">
+                <div className="font-bold text-xl mb-2">
+                  编程语言学习笔记系列
+                </div>
+                <p className="text-gray-700 text-base">
+                  这是一本记录编程语言学习笔记
                 </p>
               </div>
             </a>

@@ -15,7 +15,10 @@ const About = () => {
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             I’m Truman Du.
           </h1>
-          <div style={{marginBottom: '50px' }} className="mt-6 prose prose-slate mx-auto lg:prose-lg ">
+          <div
+            style={{ marginBottom: "50px" }}
+            className="mt-6 prose prose-slate mx-auto lg:prose-lg "
+          >
             <p>
               一名来自Newegg的架构师，熟悉常用的前后端技术，目前专注于
               <strong>大数据，基础软件架构</strong>等领域。 同时还是
@@ -113,7 +116,7 @@ const About = () => {
             <li className="mt-4 flex">
               <a
                 className="group flex text-sm font-medium text-zinc-800 transition hover:text-yellow-500 dark:text-zinc-200 dark:hover:text-yellow-500"
-                href="https://mp.weixin.qq.com/s?__biz=MzI4NTMwNTQ5Mg==&mid=2247483684&idx=1&sn=4c1f96c16463601a7e220a06649f4cd3"
+                href="http://static.trumandu.top/trumandu_wechat_2022.png"
               >
                 <svg
                   className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-yellow-500"
