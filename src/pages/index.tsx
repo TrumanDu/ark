@@ -341,7 +341,7 @@ export default function HomePage() {
               </div>
             </a>
           </div>
-          <div className="max-w-xl mb-4 rounded overflow-hidden shadow-md flex hover:shadow-xl transform transition duration-500 hover:scale-105">
+          <div className="max-w-xl mb-4 rounded overflow-hidden flex hover:shadow-xl transform transition duration-500 hover:scale-105">
             <a
               className=" flex"
               target="_blank"
