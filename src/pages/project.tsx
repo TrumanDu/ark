@@ -1,5 +1,5 @@
 import toolkit from "../assets/toolkit.png";
-import financial from "../assets/financial-assistant.png"
+import financial from "../assets/financial.png"
 const Project = () => {
   return (
     <div className="mx-auto mt-20 mb:w-4/5">
