@@ -386,6 +386,19 @@ const Project = () => {
             </div>
           </a>
         </div>
+         <div className="h-40 p-6 rounded overflow-hidden shadow-md  flex hover:shadow-xl transform transition duration-500 hover:scale-105 bg-gradient-to-r from-red-500 to-orange-500">
+          <a href="https://github.com/TrumanDu/financial-assistant" className="flex">
+            <img src={toolkit} height={60} width={110} />
+            <div className="px-6 py-4">
+              <div className="font-bold text-zinc-100 text-xl mb-2">
+                家庭理财助手
+              </div>
+              <p className="text-zinc-100 text-base">
+                能够记录家庭财产，汇总分析不同产品收益情况的家庭理财助手！
+              </p>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   );
