@@ -18,7 +18,9 @@ export default defineConfig({
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(hm, s);
   })();`,
-    `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5870530442956319"
-     crossorigin="anonymous"></script>`,
+    {
+      src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5870530442956319",
+      crossorigin: "anonymous",
+    },
   ],
 });
