@@ -1,5 +1,6 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
+import React from "react";
 export default function Header() {
   const [show, setShow] = useState(false);
   const [location] = useState(window.location.pathname);
