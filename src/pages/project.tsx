@@ -1,5 +1,6 @@
 import toolkit from "../assets/toolkit.png";
-import financial from "../assets/financial.png"
+import financial from "../assets/financial.png";
+import React from "react";
 const Project = () => {
   return (
     <div className="mx-auto mt-20 mb:w-4/5">
@@ -371,7 +372,7 @@ const Project = () => {
         </p>
       </div>
       <div
-        style={{ marginTop: "50px",marginBottom: "100px" }}
+        style={{ marginTop: "50px", marginBottom: "100px" }}
         className="m-auto w-4/5 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
       >
         <div className="h-40 p-6 rounded overflow-hidden shadow-md  flex hover:shadow-xl transform transition duration-500 hover:scale-105 bg-gradient-to-r from-red-500 to-orange-500">
@@ -387,8 +388,11 @@ const Project = () => {
             </div>
           </a>
         </div>
-         <div className="h-40 p-6 rounded overflow-hidden shadow-md  flex hover:shadow-xl transform transition duration-500 hover:scale-105 bg-gradient-to-r from-red-500 to-orange-500">
-          <a href="https://github.com/TrumanDu/financial-assistant" className="flex">
+        <div className="h-40 p-6 rounded overflow-hidden shadow-md  flex hover:shadow-xl transform transition duration-500 hover:scale-105 bg-gradient-to-r from-red-500 to-orange-500">
+          <a
+            href="https://github.com/TrumanDu/financial-assistant"
+            className="flex"
+          >
             <img src={financial} height={60} width={110} />
             <div className="px-6 py-4">
               <div className="font-bold text-zinc-100 text-xl mb-2">

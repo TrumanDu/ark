@@ -5,6 +5,7 @@ import book3 from "../assets/mongo20230315231615.png";
 import book4 from "../assets/es20230315231815.png";
 import kibana from "../assets/kibana20230315232024.png";
 import language from "../assets/language.png";
+import React from "react";
 
 export default function HomePage() {
   return (

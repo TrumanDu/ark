@@ -1,3 +1,4 @@
+import React from "react";
 import trumanImg from "../assets/trumandu_20230319181007.jpg";
 const About = () => {
   return (
