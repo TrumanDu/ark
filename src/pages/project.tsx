@@ -1,5 +1,6 @@
 import toolkit from "../assets/toolkit.png";
 import financial from "../assets/financial.png";
+import summary_logo from "../assets/summary.png";
 import React from "react";
 const Project = () => {
   return (
@@ -400,6 +401,19 @@ const Project = () => {
               </div>
               <p className="text-zinc-100 text-base">
                 能够记录家庭财产，汇总分析不同产品收益情况的家庭理财助手！
+              </p>
+            </div>
+          </a>
+        </div>
+        <div className="h-40 p-6 rounded overflow-hidden shadow-md  flex hover:shadow-xl transform transition duration-500 hover:scale-105 bg-gradient-to-r from-red-500 to-orange-500">
+          <a href="https://trumandu.top/2024-summary" className="flex">
+            <img src={summary_logo} height={60} width={110} />
+            <div className="px-6 py-4">
+              <div className="font-bold text-zinc-100 text-xl mb-2">
+                独立博客年终总结随机浏览
+              </div>
+              <p className="text-zinc-100 text-base">
+                年度独立博客年终总结随机浏览网站——发现他人的精彩，在文字中感受温度，在共鸣中发现自己！
               </p>
             </div>
           </a>
