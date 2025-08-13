@@ -31,7 +31,7 @@ jobs:
         run: npm run build
       # 上传阿里云
       - name: ssh deploy
-        uses: cross-the-world/ssh-scp-ssh-pipelines@latest
+        uses: TrumanDu/ssh-scp-ssh-pipelines@v1.1.5
         env:
           WELCOME: "ssh scp ssh pipelines"
           LASTSSH: "Doing something after copying"

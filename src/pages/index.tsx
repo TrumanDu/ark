@@ -346,7 +346,7 @@ export default function HomePage() {
             <a
               className=" flex"
               target="_blank"
-              href="https://trumandu.gitbook.io/kibana-plugin-development-tutorial/"
+              href="https://book.trumandu.top/language/go/go%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0"
             >
               <div className="w-1/3">
                 <img src={language} alt="Book Cover" className="w-full" />
