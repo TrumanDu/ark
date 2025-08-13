@@ -1,6 +1,7 @@
 import toolkit from "../assets/toolkit.png";
 import financial from "../assets/financial.png";
 import summary_logo from "../assets/summary.png";
+import photo_master from "../assets/xiutu.svg";
 import React from "react";
 const Project = () => {
   return (
@@ -376,6 +377,21 @@ const Project = () => {
         style={{ marginTop: "50px", marginBottom: "100px" }}
         className="m-auto w-4/5 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
       >
+        <div className="h-40 p-6 rounded overflow-hidden shadow-md  flex hover:shadow-xl transform transition duration-500 hover:scale-105 bg-gradient-to-r from-red-500 to-orange-500">
+          <a href="https://xiutu.trumandu.top" className="flex">
+            <img src={photo_master} height={60} width={110} />
+            <div className="px-6 py-4">
+              <div className="font-bold text-zinc-100 text-xl mb-2">
+                修图大师
+              </div>
+              <p className="text-zinc-100 text-base">
+                一款简单易用的在线图片编辑工具，支持AI
+                修图，证件照，水印与压缩等功能！
+              </p>
+            </div>
+          </a>
+        </div>
+
         <div className="h-40 p-6 rounded overflow-hidden shadow-md  flex hover:shadow-xl transform transition duration-500 hover:scale-105 bg-gradient-to-r from-red-500 to-orange-500">
           <a href="https://toolkit.trumandu.top/" className="flex">
             <img src={toolkit} height={60} width={110} />
