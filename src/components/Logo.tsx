@@ -18,8 +18,8 @@ export default function Logo({ size = 32 }: { size?: number }) {
         fontWeight="700"
         fill="#FAF8F5"
       >
-        <tspan fontSize="17">T</tspan>
-        <tspan fontSize="12" dy="1">D</tspan>
+        <tspan fontSize="15">T</tspan>
+        <tspan fontSize="15">D</tspan>
       </text>
     </svg>
   );
