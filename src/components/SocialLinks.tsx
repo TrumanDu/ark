@@ -18,7 +18,13 @@ const links: SocialLink[] = [
     label: "Blog",
     href: "https://blog.trumandu.top/",
     icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+      <svg
+        className="w-5 h-5"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+      >
         <path d="M5 16a3 3 0 1 0 0 6a3 3 0 0 0 0-6ZM5 1c9.925 0 18 8.075 18 18m-5 0c0-7.168-5.832-13-13-13m8 13c0-4.411-3.589-8-8-8m-3 0v8" />
       </svg>
     ),
@@ -29,15 +35,6 @@ const links: SocialLink[] = [
     icon: (
       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
         <path d="M21 4H3a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1zM4 18V6h7v12H4zm9 0V6h7v12h-7z" />
-      </svg>
-    ),
-  },
-  {
-    label: "Newsletter",
-    href: "https://trumandu.zhubai.love/",
-    icon: (
-      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
       </svg>
     ),
   },
@@ -58,7 +55,10 @@ interface SocialLinksProps {
   className?: string;
 }
 
-export default function SocialLinks({ variant = "horizontal", className = "" }: SocialLinksProps) {
+export default function SocialLinks({
+  variant = "horizontal",
+  className = "",
+}: SocialLinksProps) {
   const containerClass =
     variant === "horizontal"
       ? "flex items-center gap-3"
@@ -83,7 +83,9 @@ export default function SocialLinks({ variant = "horizontal", className = "" }: 
         >
           {link.icon}
           {variant === "vertical" && (
-            <span className="text-sm font-display font-medium">{link.label}</span>
+            <span className="text-sm font-display font-medium">
+              {link.label}
+            </span>
           )}
         </motion.a>
       ))}

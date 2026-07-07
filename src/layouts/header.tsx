@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useLocation } from "umi";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "../assets/logo.png";
+import Logo from "../components/Logo";
 import LanguageToggle from "../components/LanguageToggle";
 import { useLanguage } from "../i18n/context";
 import { t } from "../i18n/translations";
@@ -30,7 +30,7 @@ export default function Header() {
       <nav className="flex items-center justify-between mx-auto max-w-6xl px-6 py-4">
         {/* Logo */}
         <a href="/" className="flex items-center gap-2.5 group">
-          <img src={logo} className="h-8 w-auto" alt="TrumanDu Logo" />
+          <Logo size={32} />
           <span className="font-display text-lg font-semibold text-slate-800 group-hover:text-amber transition-colors duration-200">
             TrumanDu
           </span>
