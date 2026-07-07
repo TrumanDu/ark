@@ -1,123 +1,128 @@
 import { useState } from "react";
+import { useLocation } from "umi";
+import { motion, AnimatePresence } from "framer-motion";
 import logo from "../assets/logo.png";
+import LanguageToggle from "../components/LanguageToggle";
+import { useLanguage } from "../i18n/context";
+import { t } from "../i18n/translations";
 import React from "react";
+
 export default function Header() {
-  const [show, setShow] = useState(false);
-  const [location] = useState(window.location.pathname);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const location = useLocation();
+  const { lang } = useLanguage();
+
+  const navItems = [
+    { label: t("nav.home", lang), href: "/" },
+    { label: t("nav.about", lang), href: "/about" },
+    { label: t("nav.project", lang), href: "/project" },
+    { label: t("nav.blog", lang), href: "https://blog.trumandu.top/", external: true },
+    { label: t("nav.book", lang), href: "https://book.trumandu.top/", external: true },
+  ];
+
+  const isActive = (href: string) => {
+    if (href === "/") return location.pathname === "/";
+    return location.pathname.startsWith(href);
+  };
 
   return (
-    <header>
-      <nav className="bg-white border-gray-200 px-4 lg:px-6 py-4 dark:bg-gray-800">
-        <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-          <a href="/" className="flex items-center">
-            <img src={logo} className="mr-3 h-6 sm:h-9" alt="TrumanDu Logo" />
-            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-              TrumanDu
-            </span>
-          </a>
-          <div className="flex items-center lg:order-2">
-            <button
-              data-collapse-toggle="mobile-menu-2"
-              onClick={() => {
-                setShow(!show);
-              }}
-              type="button"
-              className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="mobile-menu-2"
-              aria-expanded="false"
-            >
-              <span className="sr-only">Open main menu</span>
-              <svg
-                className="w-6 h-6"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#FAF8F5]/85 backdrop-blur-lg border-b border-slate-200/60">
+      <nav className="flex items-center justify-between mx-auto max-w-6xl px-6 py-4">
+        {/* Logo */}
+        <a href="/" className="flex items-center gap-2.5 group">
+          <img src={logo} className="h-8 w-auto" alt="TrumanDu Logo" />
+          <span className="font-display text-lg font-semibold text-slate-800 group-hover:text-amber transition-colors duration-200">
+            TrumanDu
+          </span>
+        </a>
+
+        {/* Desktop Nav */}
+        <ul className="hidden md:flex items-center gap-1">
+          {navItems.map((item) => (
+            <li key={item.href}>
+              <a
+                href={item.href}
+                target={item.external ? "_blank" : undefined}
+                rel={item.external ? "noopener noreferrer" : undefined}
+                className={`
+                  relative px-4 py-2 text-sm font-display font-medium rounded-lg transition-all duration-200
+                  ${
+                    isActive(item.href)
+                      ? "text-amber-dark bg-amber/10"
+                      : "text-slate-500 hover:text-slate-800 hover:bg-slate-100"
+                  }
+                `}
               >
-                <path
-                  //   fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  //   clip-rule="evenodd"
-                ></path>
-              </svg>
-              <svg
-                className="hidden w-6 h-6"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  //   fill-rule="evenodd"
-                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                  //   clip-rule="evenodd"
-                ></path>
-              </svg>
-            </button>
-          </div>
-          <div
-            className={`justify-between items-center w-full lg:flex lg:w-auto lg:order-1 ${
-              show ? "" : "hidden"
-            }`}
-            id="mobile-menu-2"
+                {item.label}
+                {isActive(item.href) && (
+                  <motion.div
+                    layoutId="activeNav"
+                    className="absolute bottom-0 left-1/2 -translate-x-1/2 w-5 h-0.5 rounded-full bg-amber"
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  />
+                )}
+              </a>
+            </li>
+          ))}
+          <li className="ml-2">
+            <LanguageToggle />
+          </li>
+        </ul>
+
+        {/* Mobile Toggle */}
+        <div className="flex items-center gap-3 md:hidden">
+          <LanguageToggle />
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="p-2 rounded-lg text-slate-500 hover:text-slate-800 hover:bg-slate-100 transition-colors"
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
           >
-            <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-              <li>
-                <a
-                  href="/"
-                  className={`block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 ${
-                    location == "/"
-                      ? "bg-yellow-400 lg:bg-transparent lg:text-yellow-400"
-                      : "lg:hover:text-yellow-400"
-                  } lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700`}
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/about"
-                  className={`block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 ${
-                    location == "/about"
-                      ? "bg-yellow-400 lg:bg-transparent lg:text-yellow-400"
-                      : "lg:hover:text-yellow-400"
-                  } lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700`}
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/project"
-                  className={`block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 ${
-                    location == "/project"
-                      ? "bg-yellow-400 lg:bg-transparent lg:text-yellow-400"
-                      : "lg:hover:text-yellow-400"
-                  } lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700`}
-                >
-                  Project
-                </a>
-              </li>
-              <li>
-                <a
-                  href="http://blog.trumandu.top/"
-                  target="_blank"
-                  className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-yellow-400 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a
-                  href="http://book.trumandu.top/"
-                  target="_blank"
-                  className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-yellow-400 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  Book
-                </a>
-              </li>
-            </ul>
-          </div>
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              {mobileOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
+          </button>
         </div>
       </nav>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {mobileOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.2, ease: "easeInOut" }}
+            className="md:hidden overflow-hidden border-t border-slate-200/60 bg-[#FAF8F5]"
+          >
+            <ul className="px-6 py-4 space-y-1">
+              {navItems.map((item) => (
+                <li key={item.href}>
+                  <a
+                    href={item.href}
+                    target={item.external ? "_blank" : undefined}
+                    rel={item.external ? "noopener noreferrer" : undefined}
+                    onClick={() => setMobileOpen(false)}
+                    className={`
+                      block px-4 py-2.5 text-sm font-display font-medium rounded-lg transition-all duration-200
+                      ${
+                        isActive(item.href)
+                          ? "text-amber-dark bg-amber/10"
+                          : "text-slate-500 hover:text-slate-800 hover:bg-slate-100"
+                      }
+                    `}
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }
