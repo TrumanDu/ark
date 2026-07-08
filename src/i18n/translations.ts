@@ -13,7 +13,7 @@ const translations = {
   "hero.title.line2": { en: "Open Source Advocate.", zh: "开源倡导者。" },
   "hero.subtitle": {
     en: "I'm Truman — a software architect based in Xi'an, China. I build tools, write books, and grow the local tech community.",
-    zh: "我是 Truman，来自西安的软件架构师。我构建工具、撰写书籍，并推动本地技术社区的发展。",
+    zh: "我是 Truman，来自西安的软件架构师。开发软件、撰写书籍，并推动本地技术社区的发展。",
   },
 
   // Sections
@@ -26,8 +26,8 @@ const translations = {
   // About
   "about.greeting": { en: "I'm Truman Du.", zh: "我是 Truman Du。" },
   "about.bio.p1": {
-    en: "An architect at Newegg, fluent across the full stack. My current focus spans big data infrastructure and foundational software architecture. I'm also a co-founder of the Xi'an IT Tech Circle, a grassroots community for engineers in the region.",
-    zh: "一名来自 Newegg 的架构师，熟悉常用的前后端技术，目前专注于大数据和基础软件架构领域。同时也是西安 IT 技术圈发起人之一。",
+    en: "An architect at Newegg, fluent across the full stack. My current focus spans AI and foundational software architecture. I'm also a co-founder of the Xi'an IT Tech Circle, a grassroots community for engineers in the region.",
+    zh: "一名来自 Newegg 的架构师，熟悉常用的前后端技术，目前专注于AI 和基础软件架构领域。同时也是西安 IT 技术圈发起人之一。",
   },
   "about.bio.p2": {
     en: "I believe in open source the way some people believe in public education — it's the infrastructure that makes everything else possible. Without it, the modern internet wouldn't exist. I've contributed to several projects I admire:",
