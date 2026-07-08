@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, { createContext, useContext, useState, useCallback } from "react";
 import { Lang } from "./translations";
 
 interface LanguageContextType {
@@ -9,10 +9,10 @@ interface LanguageContextType {
 
 const STORAGE_KEY = "preferred_lang";
 
-function getInitialLang(): Lang {
+function readLang(): Lang {
   try {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored === "zh" || stored === "en") return stored;
+    const v = localStorage.getItem(STORAGE_KEY);
+    if (v === "zh") return "zh";
   } catch {}
   return "en";
 }
@@ -24,17 +24,16 @@ const LanguageContext = createContext<LanguageContextType>({
 });
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [lang, setLang] = useState<Lang>(getInitialLang);
+  const [lang, setLangState] = useState<Lang>(readLang);
 
-  useEffect(() => {
-    try {
-      localStorage.setItem(STORAGE_KEY, lang);
-    } catch {}
-  }, [lang]);
+  const setLang = useCallback((l: Lang) => {
+    setLangState(l);
+    try { localStorage.setItem(STORAGE_KEY, l); } catch {}
+  }, []);
 
-  const toggleLang = () => {
-    setLang((prev) => (prev === "en" ? "zh" : "en"));
-  };
+  const toggleLang = useCallback(() => {
+    setLang(lang === "en" ? "zh" : "en");
+  }, [lang, setLang]);
 
   return (
     <LanguageContext.Provider value={{ lang, setLang, toggleLang }}>

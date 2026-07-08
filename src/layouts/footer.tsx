@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "umi";
 import { useLanguage } from "../i18n/context";
 import { t } from "../i18n/translations";
 
@@ -11,9 +12,9 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <span className="font-display text-sm text-slate-400">
           ©{year}{" "}
-          <a href="/" className="text-slate-500 hover:text-amber transition-colors duration-200">
+          <Link to="/" className="text-slate-500 hover:text-amber transition-colors duration-200">
             TrumanDu
-          </a>
+          </Link>
           {" "}{t("footer.rights", lang)}
         </span>
         <a
