@@ -16,7 +16,7 @@ const links: SocialLink[] = [
   },
   {
     label: "Blog",
-    href: "https://blog.trumandu.top/",
+    href: "https://blog.trumandu.top/atom.xml",
     icon: (
       <svg
         className="w-5 h-5"
